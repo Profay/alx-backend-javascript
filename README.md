@@ -1,2 +1,4 @@
-# alx-backend-javascript
-The specialization phase of alx
+
+# The specialization phase of alx
+
+Javascripts
