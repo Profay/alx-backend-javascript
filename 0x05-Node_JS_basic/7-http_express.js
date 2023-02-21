@@ -1,4 +1,5 @@
 const express = require('express');
+
 const app = express();
 const fs = require('fs');
 
@@ -45,19 +46,17 @@ const countStudents = (path) => {
 };
 
 app.get('/', (req, res) => {
-    res.send('Hello Holberton School!');
-  })
+  res.send('Hello Holberton School!');
+});
 
 app.get('/students', (req, res) => {
-    countStudents(path)
-      .then((data) => {
-        res.send(`This is the list of our students\n${data.join('\n')}`);
-      })
-      .catch((error) => {
-        res.end(error);
-      });
-  }
-);
-
+  countStudents(path)
+    .then((data) => {
+      res.send(`This is the list of our students\n${data.join('\n')}`);
+    })
+    .catch((error) => {
+      res.end(error);
+    });
+});
 
 module.exports = app.listen(port, 'localhost');
