@@ -3,7 +3,7 @@ const fs = require('fs');
 function countStudents(path) {
   try {
     let data = fs.readFileSync(path, 'utf8').toString().split('\n');
-    data = data.slice(1, data.length);
+    data = data.slice(1, data.length - 1);
     console.log(`Number of students: ${data.length}`);
     const fields = {};
     for (const row of data) {
