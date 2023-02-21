@@ -15,7 +15,7 @@ const countStudents = (path) => {
         const data = resData.toString().split('\n');
         let students = data.filter((item) => item);
         students = students.map((item) => item.split(','));
-        printItem = `Number of students: ${students.length - 2}`;
+        printItem = `Number of students: ${students.length - 1}`;
         console.log(printItem);
         printOut.push(printItem);
 
