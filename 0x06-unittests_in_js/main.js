@@ -1,2 +1,2 @@
-const calculateNumber = require("./1-calcul.js");
-console.log(calculateNumber('DIVIDE', 1, 3))
+const sendPaymentRequestToApi = require("./3-payment.js");
+sendPaymentRequestToApi(67, 3)
