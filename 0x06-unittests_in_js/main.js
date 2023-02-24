@@ -1,2 +1,2 @@
-const calculateNumber = require("./0-calcul.js");
-console.log(calculateNumber(1, 8.5))
+const calculateNumber = require("./1-calcul.js");
+console.log(calculateNumber('DIVIDE', 1, 3))
